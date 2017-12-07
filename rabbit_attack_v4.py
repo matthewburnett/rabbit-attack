@@ -1,21 +1,22 @@
 # Rabbit Attack!
 
-playing = True
+def confirm(question):
+    while True:
+        answer = input(question + " (y/n)")
 
-while playing:
+        if answer == "y":
+            return True
+        elif answer == "n":
+            return False
 
+def play():
     num_knights = 5
     rabbit_is_alive = True
 
     print("Look, a cute little bunny rabbit.")
 
     while rabbit_is_alive and num_knights > 0:
-        answer = input("Shall we use the Holy Hand Grenade? (y/n)")
-        
-        if answer == "y":
-            use_grenade = True
-        else:
-            use_grenade = False
+        use_grenade = confirm("Shall we use the Holy Hand Grenade?")
             
         if use_grenade:
             print("1... 2... 5... No, 3!")
@@ -30,13 +31,13 @@ while playing:
         print("The killer rabbit has been defeated. You win!")
     else:
         print("All of the knights are dead. You lose.")
-        
-    answer = input("Would you like to play again? (y/n)")
 
-    if answer == "y":
-        playing = True
-    else:
-        playing = False
+
+playing = True
+
+while playing:
+    play()
+    playing = confirm("Would you like to play again?")
 
 print("Goodbye. Thanks for playing!")
 
