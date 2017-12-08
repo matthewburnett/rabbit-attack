@@ -9,7 +9,6 @@ def end():
 def confirm(question):
     while True:
         answer = input(question + " (y/n)")
-        answer = answer.lower()
 
         if answer in ["y" , "yes", "yup"]:
             return True
