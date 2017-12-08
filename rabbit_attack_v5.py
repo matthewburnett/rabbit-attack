@@ -10,9 +10,9 @@ def confirm(question):
     while True:
         answer = input(question + " (y/n)")
 
-        if answer in ["y" , "yes", "yup"]:
+        if answer in ["y" , "yes"]:
             return True
-        elif answer in ["n", "no", "nope"]:
+        elif answer in ["n", "no"]:
             return False
 
 def play():
