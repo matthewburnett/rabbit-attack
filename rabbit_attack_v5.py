@@ -4,7 +4,7 @@ def start():
     print("Welcome to RABBIT ATTACK!")
 
 def end():
-    print("by Coop Dogg")
+    print("Goodbye. Thanks for playing!")
     
 def confirm(question):
     while True:
