@@ -1,6 +1,4 @@
 # Rabbit Attack!
-
-
 def start():
     print("Welcome to RABBIT ATTACK!")
 
