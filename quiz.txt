@@ -47,10 +47,12 @@ j. Compare this version to the original (v1). How would adding the features
 
 k. List several function calls that could be used to 'unit test' your
    case-insensitive confirm function.
-	
+	print(confirm("Are you tired?"))
 
 l. Explain how parts of your code become reusable because of refactoring.
    Describe another application where you may be able to use the confirm
    function in multiple instances.
+	Refactoring logic into callable functions can make them available for use later without having to duplicate code.
+	Various yes or no questions.
 
 m. Make cool start and end screens using ascii art.

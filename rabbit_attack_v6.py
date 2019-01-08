@@ -1,15 +1,17 @@
 # Rabbit Attack!
 def start():
-    print("Welcome to RABBIT ATTACK!")
-
+    print("#############################")
+    print("# Welcome to RABBIT ATTACK! #")
+    print("#############################")
 
 def end():
-    print("Goodbye. Thanks for playing!")
-
+    print("################################")
+    print("# Goodbye. Thanks for playing! #")
+    print("################################")
 
 def confirm(question):
     while True:
-        answer = input(question + " (y/n)").lower()
+        answer = input(question + " (y/n)\n").lower()
 
         if answer in ["y", "yes"]:
             return True
