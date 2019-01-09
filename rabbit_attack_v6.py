@@ -4,14 +4,16 @@ def start():
     print("# Welcome to RABBIT ATTACK! #")
     print("#############################")
 
+
 def end():
     print("################################")
     print("# Goodbye. Thanks for playing! #")
     print("################################")
 
+
 def confirm(question):
     while True:
-        answer = input(f"{question} (y/n)\n").lower()
+        answer = input(f"{question} [Y]es or [N]o:").lower()
 
         if answer in ["y", "yes"]:
             return True
@@ -29,13 +31,12 @@ def play():
         use_grenade = confirm("Shall we use the Holy Hand Grenade?")
 
         if use_grenade:
-            print("1... 2... 5... No, 3!")
-            print("Boom!")
+            print("1... 2... 5... No, 3!\nBoom!")
             rabbit_is_alive = False
         else:
             num_knights -= 1
-            print("Oh, no! The rabbit just killed one of the knights!")
-            print(f"Only {num_knights} remain.")
+            print("Oh, no! The rabbit just killed one of the knights!\n"
+                  f"Only {num_knights} remain.")
 
     if num_knights > 0:
         print("The killer rabbit has been defeated. You win!")
