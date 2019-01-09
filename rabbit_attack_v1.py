@@ -11,12 +11,12 @@ while playing:
 
     while rabbit_is_alive and num_knights > 0:
         answer = input("Shall we use the Holy Hand Grenade? (y/n)")
-        
+
         if answer == "y":
             use_grenade = True
         else:
             use_grenade = False
-            
+
         if use_grenade:
             print("1... 2... 5... No, 3!")
             print("Boom!")
@@ -25,12 +25,12 @@ while playing:
             num_knights -= 1
             print("Oh, no! The rabbit just killed one of the knights!")
             print("Only " + str(num_knights) + " remain.")
-        
+
     if num_knights > 0:
         print("The killer rabbit has been defeated. You win!")
     else:
         print("All of the knights are dead. You lose.")
-        
+
     answer = input("Would you like to play again? (y/n)")
 
     if answer == "y":
@@ -39,4 +39,3 @@ while playing:
         playing = False
 
 print("Goodbye. Thanks for playing!")
-
