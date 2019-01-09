@@ -11,7 +11,7 @@ def end():
 
 def confirm(question):
     while True:
-        answer = input(question + " (y/n)\n").lower()
+        answer = input(f"{question} (y/n)\n").lower()
 
         if answer in ["y", "yes"]:
             return True
@@ -35,7 +35,7 @@ def play():
         else:
             num_knights -= 1
             print("Oh, no! The rabbit just killed one of the knights!")
-            print("Only " + str(num_knights) + " remain.")
+            print(f"Only {num_knights} remain.")
 
     if num_knights > 0:
         print("The killer rabbit has been defeated. You win!")
